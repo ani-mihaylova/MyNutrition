@@ -21,6 +21,10 @@
 
         IDbSet<Day> Days { get; set; }
 
+        IDbSet<Comment> Comments { get; set; }
+
+        IDbSet<Rating> Ratings { get; set; }
+
         IDbSet<Image> Images { get; set; }
 
         int SaveChanges();

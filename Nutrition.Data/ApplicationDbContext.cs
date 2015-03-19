@@ -25,6 +25,10 @@
 
         public virtual IDbSet<Recipe> Recipes { get; set; }
 
+        public virtual IDbSet<Comment> Comments { get; set; }
+
+        public virtual IDbSet<Rating> Ratings { get; set; }
+
         public virtual IDbSet<Tag> Tags { get; set; }
 
         public virtual IDbSet<Diet> Diets { get; set; }

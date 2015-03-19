@@ -7,3 +7,12 @@ D:\TelerikAcademy\Meals\Nutrition\Nutrition.Web.Infrastructure\bin\Debug\AutoMap
 D:\TelerikAcademy\Meals\Nutrition\Nutrition.Web.Infrastructure\bin\Debug\AutoMapper.Net4.pdb
 D:\TelerikAcademy\Meals\Nutrition\Nutrition.Web.Infrastructure\obj\Debug\Nutrition.Web.Infrastructure.dll
 D:\TelerikAcademy\Meals\Nutrition\Nutrition.Web.Infrastructure\obj\Debug\Nutrition.Web.Infrastructure.pdb
+D:\TestProject\MyNutrition\Nutrition.Web.Infrastructure\bin\Debug\AutoMapper.Net4.dll
+D:\TestProject\MyNutrition\Nutrition.Web.Infrastructure\bin\Debug\Nutrition.Web.Infrastructure.dll
+D:\TestProject\MyNutrition\Nutrition.Web.Infrastructure\bin\Debug\Nutrition.Web.Infrastructure.pdb
+D:\TestProject\MyNutrition\Nutrition.Web.Infrastructure\bin\Debug\AutoMapper.dll
+D:\TestProject\MyNutrition\Nutrition.Web.Infrastructure\bin\Debug\AutoMapper.pdb
+D:\TestProject\MyNutrition\Nutrition.Web.Infrastructure\bin\Debug\AutoMapper.xml
+D:\TestProject\MyNutrition\Nutrition.Web.Infrastructure\bin\Debug\AutoMapper.Net4.pdb
+D:\TestProject\MyNutrition\Nutrition.Web.Infrastructure\obj\Debug\Nutrition.Web.Infrastructure.dll
+D:\TestProject\MyNutrition\Nutrition.Web.Infrastructure\obj\Debug\Nutrition.Web.Infrastructure.pdb

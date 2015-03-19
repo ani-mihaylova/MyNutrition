@@ -29,6 +29,16 @@
             get { return this.GetRepository<Recipe>(); }
         }
 
+        public IGenericRepository<Comment> Comments
+        {
+            get { return this.GetRepository<Comment>(); }
+        }
+
+        public IGenericRepository<Rating> Ratings
+        {
+            get { return this.GetRepository<Rating>(); }
+        }
+
         public IGenericRepository<Tag> Tags
         {
             get { return this.GetRepository<Tag>(); }

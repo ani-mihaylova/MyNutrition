@@ -29,6 +29,6 @@
         @{Html.RenderAction("ListComments", "Comment", new { recipeId = Model.ID });}
     </div>
     <div class="row">
-
+        @{Html.RenderAction("Create", "Comment", new { recipeId = Model.ID });}
     </div>
 </div>

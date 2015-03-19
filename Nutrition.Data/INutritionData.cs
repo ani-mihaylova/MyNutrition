@@ -16,6 +16,10 @@
 
         IGenericRepository<Day> Days { get;}
 
+        IGenericRepository<Comment> Comments { get; }
+
+        IGenericRepository<Rating> Ratings { get; }
+
         IGenericRepository<Image> Images { get; }
 
         IGenericRepository<Tag> Tags { get; }

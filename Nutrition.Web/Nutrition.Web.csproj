@@ -198,6 +198,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\Comments\CommentDetailsViewModel.cs" />
+    <Compile Include="ViewModels\Comments\CreateCommentViewModel.cs" />
     <Compile Include="ViewModels\Days\CreateDayViewModel.cs" />
     <Compile Include="ViewModels\Diets\CreateDietViewModel.cs" />
     <Compile Include="ViewModels\Recipes\CreateRecipeViewModel.cs" />
@@ -1199,10 +1200,10 @@
     <Content Include="Views\Shared\ListComments.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\tinymce_full_compressed.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\tinymce_full.cshtml" />
+    <Content Include="Views\Comment\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Comment\" />
     <Folder Include="Views\Shared\DisplayTemplates\" />
     <Folder Include="Views\User\" />
   </ItemGroup>
