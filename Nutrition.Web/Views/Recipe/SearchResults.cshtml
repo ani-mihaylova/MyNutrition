@@ -1,0 +1,32 @@
+﻿@model ICollection<Nutrition.Web.ViewModels.Recipes.SearchResultRecipeViewModel>
+@{
+    ViewBag.Title = "SearchResults";
+}
+ 
+<div class="jumbotron">
+    <h1>Резултати</h1>
+    <div class="list-group">
+        @foreach (var recipe in Model)
+        {
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">@recipe.Title</h4>
+                <p class="list-group-item-text">
+                    @if (recipe.ImageId != null)
+                    {
+                        <img src="@Url.Action("Image", "Recipe", new { id = recipe.ImageId })" alt="@recipe.Title" class="img-responsive" width="300" />
+                    }
+                   @recipe.Description
+                </p>
+                <ul class="list-inline">
+                    @foreach (var tagName in recipe.TagNames)
+                    {
+                        <li>@tagName</li>
+                    }
+                </ul>
+
+            </a>
+        }
+    </div>
+</div>
+
+

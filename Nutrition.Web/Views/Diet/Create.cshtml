@@ -1,0 +1,24 @@
+﻿@model Nutrition.Web.ViewModels.Diets.CreateDietViewModel
+@{
+    ViewBag.Title = "Create";
+}
+
+@using(Html.BeginForm("Create","Diet",FormMethod.Post,new {@class="form-horizontal"}))
+{
+    @Html.AntiForgeryToken()
+
+    <legend>Създаване на диета</legend>
+    <fieldset>
+
+        @Html.EditorFor(model=>model.Name, new{ LabelName="Име на диетата*"})
+        @Html.EditorFor(model=>model.NumberOfDays, new{ LabelName="Брой дни*"})
+
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button type="reset" class="btn btn-default">Откажи</button>
+                <button type="submit" class="btn btn-primary">Създай диета</button>
+            </div>
+        </div>
+    </fieldset>
+}
+

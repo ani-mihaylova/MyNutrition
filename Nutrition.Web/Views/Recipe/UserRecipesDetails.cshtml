@@ -1,0 +1,22 @@
+﻿@model ICollection<Nutrition.Web.ViewModels.Recipes.UserRecipesViewModel>
+@{
+    ViewBag.Title = "UserRecipesDetails";
+}
+
+<h2>Моите рецепти</h2>
+<div class="list-group">
+    @foreach (var recipe in Model)
+    {       
+        <a href="@Url.Action("Details", "Recipe", new { recipeId = recipe.ID })" class="list-group-item">
+            @if (recipe.ImageId != null)
+            {
+            <img src="@Url.Action("Image","Recipe",new { id = recipe.ImageId})" class="img-responsive" width="50" />
+            }
+            @recipe.Title
+            <span class="badge">Comments</span>
+        </a>
+    }
+
+</div>
+
+

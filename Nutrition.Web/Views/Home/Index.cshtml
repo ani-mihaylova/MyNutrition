@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-7">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                @for (int i = 0; i < 6; i++)
+                {
+                    if (i == 0)
+                    {
+                        <div class="active item">
+                            <h2><img src="~/Images/Home/img@(i+1).jpg" /></h2>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="item">
+                            <h2><img src="~/Images/Home/img@(i+1).jpg" /></h2>
+                        </div>
+                    }
+                }
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div class="row" id="searchBox">
+            @Html.Partial("_Search")
+        </div>
+        <div class="row">
+            @Html.Partial("_PickButton")
+        </div>
+    </div>
+</div>
+
+@section styles{
+    <style type="text/css">
+        h2 {
+            margin: 0;
+            color: #666;
+            font-size: 52px;
+            font-family: "trebuchet ms", sans-serif;
+        }
+
+        .item {
+            text-align: center;
+        }
+
+        .carousel {
+            margin-top: 20px;
+            width: 600px;
+            height: 388px;
+        }
+
+        #searchBox {
+            margin-top: 20px;
+        }
+
+        #submitBtn {
+            margin-left: -20px;
+        }
+    </style>
+}

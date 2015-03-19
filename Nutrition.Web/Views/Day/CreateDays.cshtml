@@ -1,0 +1,48 @@
+﻿@model ICollection<Nutrition.Web.ViewModels.Days.CreateDayViewModel>
+@{
+    ViewBag.Title = "CreateDays";
+}
+
+<h2>Добави дни </h2>
+@foreach (var day in Model)
+{
+    using (Ajax.BeginForm("Create", "Day", new { Number = day.Number, dietId = day.DietId }, new AjaxOptions()
+    {
+        HttpMethod = "POST",
+        UpdateTargetId = "buttons",
+        OnSuccess = "OnAjaxRequestSuccess"
+    }))
+    {
+        <div class="panel panel-default">
+            <div class="panel-heading">Ден @day.Number</div>
+            <div class="panel-body">
+
+                @Html.Editor("Description", "String", new { LabelName = "Описание" })
+
+                <div class="form-group">
+                    @Html.Label("Рецепти*", new { @class = "col-lg-2 control-label" })
+                    <div class="col-lg-10">
+                        @Html.ListBox("RecipeIds", day.UserRecipes)
+                    </div>
+                </div>
+                <div class="form-group" id="buttons">
+                    <div class="col-lg-10 col-lg-offset-2">
+                        <button type="reset" class="btn btn-default">Откажи</button>
+                        <button type="submit" class="btn btn-primary">Създай ден</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+}
+
+@section scripts{
+    <script type="text/javascript">
+        var $btns = $('buttons');
+
+        function OnAjaxRequestSuccess(data) {
+            $btns.addClass('disabled');
+        }
+    </script>
+}
