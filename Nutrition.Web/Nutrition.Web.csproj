@@ -1030,7 +1030,7 @@
     <Content Include="Scripts\tinymce\themes\simple\skins\o2k7\content.css" />
     <Content Include="Scripts\tinymce\themes\simple\skins\o2k7\img\button_bg.png" />
     <Content Include="Scripts\tinymce\themes\simple\skins\o2k7\ui.css" />
-    <Content Include="Scripts\tinymce\tiny_mce.js" />
+    <Content Include="Scripts\tinymce\tinymce.js" />
     <Content Include="Scripts\tinymce\tiny_mce_popup.js" />
     <Content Include="Scripts\tinymce\tiny_mce_src.js" />
     <Content Include="Scripts\tinymce\utils\editable_selects.js" />
@@ -1198,7 +1198,6 @@
     <Content Include="Views\Home\_PickButton.cshtml" />
     <Content Include="Views\Day\DayDetails.cshtml" />
     <Content Include="Views\Shared\ListComments.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\tinymce_full_compressed.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\tinymce_full.cshtml" />
     <Content Include="Views\Comment\Create.cshtml" />
   </ItemGroup>

@@ -19,6 +19,8 @@
 
         public string Ingredients { get; set; }
 
+        public ICollection<Comment> Comments { get; set; }
+
         public virtual ICollection<string> Tags { get; set; }
 
         public void CreateMappings(IConfiguration configuration)

@@ -1,0 +1,18 @@
+﻿@model Nutrition.Web.ViewModels.Comments.CreateCommentViewModel
+
+@using (Html.BeginForm("Create", "Comment", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.EditorFor(model => model.Content)
+   var recipeId=Model.RecipeId;
+
+   <input type="hidden" value="@recipeId" name="recipeId"/>
+    <div class="form-group">
+        <div class="col-lg-10 col-lg-offset-2">
+            <button type="reset" class="btn btn-default">Откажи</button>
+            <button type="submit" class="btn btn-primary">Коментирай</button>
+        </div>
+    </div>
+
+}
