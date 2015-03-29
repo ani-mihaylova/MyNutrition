@@ -189,6 +189,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RecipeController.cs" />
+    <Compile Include="Controllers\TagController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -203,6 +204,8 @@
     <Compile Include="ViewModels\Diets\CreateDietViewModel.cs" />
     <Compile Include="ViewModels\Recipes\CreateRecipeViewModel.cs" />
     <Compile Include="ViewModels\Recipes\DetailsRecipeViewModel.cs" />
+    <Compile Include="ViewModels\Homes\HomePageRecipeViewModel.cs" />
+    <Compile Include="ViewModels\Recipes\RecipeByTagViewModel.cs" />
     <Compile Include="ViewModels\Recipes\SearchResultRecipeViewModel.cs" />
     <Compile Include="ViewModels\Recipes\UserRecipesViewModel.cs" />
   </ItemGroup>
@@ -1200,6 +1203,8 @@
     <Content Include="Views\Shared\ListComments.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\tinymce_full.cshtml" />
     <Content Include="Views\Comment\Create.cshtml" />
+    <Content Include="Views\Tag\ShowRecipesByTag.cshtml" />
+    <Content Include="Views\Home\_TopRecipesByUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

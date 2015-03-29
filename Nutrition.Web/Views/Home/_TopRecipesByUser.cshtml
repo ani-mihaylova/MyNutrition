@@ -1,0 +1,17 @@
+﻿@model ICollection<Nutrition.Web.ViewModels.Homes.HomePageRecipeViewModel>
+
+@foreach (var recipe in Model)
+{
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <h3 class="panel-title">@recipe.Title</h3>
+        </div>
+        <div class="panel-body">
+            @if (recipe.ImageId != null)
+            {
+                <img src="@Url.Action("Image", "Recipe", new { id = recipe.ImageId.Value })" alt="@recipe.Title" class="img-responsive" width="300" />
+            }
+            Рейтинг @recipe.Rating
+        </div>
+    </div>
+}

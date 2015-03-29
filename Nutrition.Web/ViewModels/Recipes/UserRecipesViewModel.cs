@@ -17,12 +17,14 @@
         public string Title { get; set; }
 
         public int? ImageId { get; set; }
-        //public Image Image { get; set; }
+
+        public int NumberOfComments { get; set; }
 
         public void CreateMappings(IConfiguration configuration)
         {
             configuration.CreateMap<Recipe, UserRecipesViewModel>()
                 .ForMember(m => m.ImageId, opt => opt.MapFrom(t => t.Image.ID))
+                .ForMember(m => m.NumberOfComments, opt => opt.MapFrom(t => t.Comments.Count))
                 .ReverseMap();
         }
     }

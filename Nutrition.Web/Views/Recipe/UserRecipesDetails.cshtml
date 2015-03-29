@@ -13,7 +13,7 @@
             <img src="@Url.Action("Image","Recipe",new { id = recipe.ImageId})" class="img-responsive" width="50" />
             }
             @recipe.Title
-            <span class="badge">Comments</span>
+            <span class="badge">@recipe.NumberOfComments Comments</span>
         </a>
     }
 

@@ -29,6 +29,7 @@ textarea {
 }
 #pickBtn{
     font-size:medium;
-    width:250px;
-    height:125px;
+    width:200px;
+    height:80px;
+    white-space:pre-line;
 }

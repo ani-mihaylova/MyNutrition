@@ -22,7 +22,8 @@
     <div class="row">
         @foreach (var tag in Model.Tags)
         {
-            <a href="#" class="btn btn-default disabled">@tag</a>
+            @Html.ActionLink(tag, "ShowRecipesByTag", "Tag", new { tagName = tag }, null)
+            @*<a href="#" class="btn btn-default disabled">@tag</a>*@
         }
     </div>
     <div class="row">
